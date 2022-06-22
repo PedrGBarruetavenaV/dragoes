@@ -44,3 +44,9 @@ nav{
     grid-rows: 2 / 3;
     background-color: yellow;
 }
+
+footer{
+    grid-column: 1 / 4;
+    grid-rows: 3 / 4;
+    background-color: black;
+}
