@@ -1,3 +1,46 @@
 html{
-    background-color: lightblue;
+    background-color: #6345b6
+}
+
+
+/* PAGINA PRINCIPAL */
+#pagina-inicial{
+    display: grid;
+    grid-template-rows: 200px 1fr;
+    grid-template-columns: 30% 1fr 20%;
+}
+header{
+    grid-column: 1 / 4;
+    background-color: rgb(199, 57, 199);
+    display: grid;
+    grid-template-columns: 100px 1fr;
+}
+header h1{
+    text-align: center;
+    color: white;
+    grid-column: 2 / 3;
+}
+header #logo{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+}
+
+nav{
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    background-color: gray;
+    height: 100%;
+}
+
+#secao-principal{
+    grid-column: 2 / 3;
+    grid-rows: 2 / 3;
+    background-color: red;
+}
+
+#propaganda{
+    grid-column: 3 / 4;
+    grid-rows: 2 / 3;
+    background-color: yellow;
 }
