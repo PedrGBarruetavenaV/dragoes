@@ -1,17 +1,21 @@
 html{
     background-color: #ffffff
 }
+body{
+    margin-left: 3%;
+    margin-right: 3%;
+}
 
 
 /* PAGINA PRINCIPAL */
 #pagina-inicial{
     display: grid;
     grid-template-rows: 150px 1fr;
-    grid-template-columns: 20% 1fr 15%;
+    grid-template-columns: 20% 1fr 10%;
 }
 header{
     grid-column: 1 / 4;
-    background-color: gray;
+    background-image: linear-gradient( to left top, rgb(21 49 110), rgb(111 207 132));
     display: grid;
     grid-template-columns: 100px 1fr;
     border-radius: 0.7em;
@@ -29,8 +33,10 @@ header #logo{
 
 nav{
     grid-column: 1 / 2;
-    grid-row: 2 / 3;
     height: 100%;
+    background-image: linear-gradient( to left top, rgba(92, 72, 207, 0.664), rgba(50 175 129));
+    height: 20%;
+    border-radius: 0.7em;
 }
 
 #secao-principal{
@@ -51,7 +57,9 @@ nav{
 #propaganda{
     grid-column: 3 / 4;
     grid-row: 2 / 3;
-    background-color: yellow;
+    background-color: gray;
+    border-radius: 0.7em;
+    margin-top: 5%;
 }
 
 footer{
