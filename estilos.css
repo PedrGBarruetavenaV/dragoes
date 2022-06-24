@@ -33,6 +33,7 @@ header #logo{
 }
 
 nav{
+    position: fixed;
     grid-column: 1 / 2;
     height: 100%;
     /*background-image: linear-gradient( to left top, rgba(92, 72, 207, 0.664), rgba(50 175 129));*/
@@ -40,9 +41,8 @@ nav{
     background-repeat: no-repeat;
     background-position: top left;
     background-size: contain;
-    height: 20%;
+    height: 100%;
     border-radius: 0.7em;
-    display: flex;
     justify-content: center;
 }
 nav img{
