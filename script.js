@@ -1,3 +1,5 @@
+// Por enquanto o javascript não funciona (tentei mas não deu)
+
 let botaoEl = document.querySelector('#abre-menu');
 let menuB = document.querySelector('#nav-dragoes');
 
