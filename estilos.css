@@ -22,10 +22,19 @@ header{
     grid-template-rows: 50% 1fr 1fr;
     border-radius: 0.7em;
 }
-header h1{
-    text-align: center;
+#titulo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     color: black;
     grid-column: 2 / 3;
+}
+#titulo h1{
+    margin: 0px;
+}
+#titulo h3{
+    margin: 0px;
 }
 header #logo{
     display: inline-block;
