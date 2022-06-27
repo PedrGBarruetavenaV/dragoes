@@ -61,6 +61,7 @@ header #logo{
     display: flex;
     list-style-type: none;
     justify-content: center;
+    align-items: center;
     gap: 3%;
     background-color: rgba(255, 191, 38, 0.86);
     height: 40px;
