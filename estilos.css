@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300&display=swap');
 
 html{
     background-image: url(imgs/fundo.jpeg);
@@ -70,6 +73,7 @@ header #logo{
     padding-right: 2%;
 }
 #menu a{
+    font-family: 'Roboto', sans-serif;
     color: white;
 }
 #menu a:link{
@@ -103,6 +107,9 @@ header #logo{
     padding: 0.5%;
     padding-left: 2%;
     padding-right: 2%;
+}
+#nav-dragoes a{
+    font-family: 'Roboto', sans-serif;
 }
 #nav-dragoes a:link{
     color: white;
@@ -156,21 +163,56 @@ header #logo{
     border-radius: 0.7em;
     margin: 3%;
     padding: 5%;
+    flex-direction: column;
 }
 .blocos h2{
     text-align: center;
     color: rgb(133, 86, 1);
+    text-decoration: rgb(133, 86, 1);
+    font-family: 'Libre Baskerville', serif;
 }
-
-#propaganda{
+.blocos a:hover{
+    text-decoration: rgb(133, 86, 1);
+}
+.cont1{
+    display: grid;
+    grid-template-columns: 300px 1fr;
+}
+.cont1 p{
+    font-size: 20px;
+    font-family: 'Zilla Slab', serif;
+    grid-column: 2 / 3;
+}
+.cont2{
+    display: grid;
+    grid-template-columns: 1fr 50px 300px;
+}
+.cont2 p{
+    font-size: 20px;
+    font-family: 'Zilla Slab', serif;
+    grid-column: 1 / 2;
+}
+.cont2 img{
     grid-column: 3 / 4;
-    grid-row: 2 / 3;
-    background-color: gray;
-    border-radius: 0.7em;
-    margin-top: 5%;
+}
+.blocos p{
+    text-align: justify;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.blocos img{
+    gap: 15%;
+    border-radius: 100em;
+    height: 200px;
+    width: 240px;
 }
 
 footer{
     grid-column: 1 / 4;
     background-color: rgb(0, 0, 0);
+    text-align: center;
+}
+footer img{
+    height: 150px;
 }
