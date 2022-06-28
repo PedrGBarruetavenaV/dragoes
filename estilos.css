@@ -2,6 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
+
+@keyframes flutuando {
+    from { top: 0;     }
+    to   { top: -30px; }
+  }
 
 html{
     background-image: url(imgs/fundo.jpeg);
@@ -207,6 +213,23 @@ header #logo{
     border-radius: 100em;
     height: 200px;
     width: 240px;
+}
+#intro{
+    padding: 0px;
+    margin-left: 20%;
+    margin-right: 20%;
+    color: white;
+    text-align: center;
+    position: relative;
+    animation: flutuando .5s ease-in-out 0s infinite alternate;
+}
+#intro h2{
+    font-size: 60px;
+    font-family: 'Playfair Display', serif;
+}
+#imagem-autores{
+    border: 3px black solid;
+    opacity: 1;
 }
 
 footer{
