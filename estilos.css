@@ -10,13 +10,13 @@
   }
 
 html{
-    background-image: url(imgs/fundo.jpeg);
-    background-repeat: repeat;
-    /*background: url(imgs/fundo.jpeg) center center no-repeat fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;*/
+    /*background-image: url(imgs/fundo.jpeg);
+    background-repeat: repeat;*/
+    background: url(imgs/fundo.jpeg) center center repeat fixed; 
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
 }
 section{
     margin-left: 3%;
