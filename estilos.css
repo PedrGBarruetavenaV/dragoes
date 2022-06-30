@@ -12,6 +12,11 @@
 html{
     background-image: url(imgs/fundo.jpeg);
     background-repeat: repeat;
+    /*background: url(imgs/fundo.jpeg) center center no-repeat fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;*/
 }
 section{
     margin-left: 3%;
@@ -73,6 +78,7 @@ header #logo{
     height: 40px;
 }
 #menu li{
+    font-family: 'Roboto', sans-serif;
     color: white;
     display: inline-block;
     padding: 0.5%;
@@ -105,6 +111,8 @@ header #logo{
     display: flex;
     justify-content: center;
     gap: 30px;
+    position: relative;
+    bottom: -16%;
 }
 #nav-dragoes li{
     display: inline-block;
