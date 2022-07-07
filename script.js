@@ -8,4 +8,4 @@ function alternaMenu() {
 }
 
 dragoesNav.addEventListener('mouseover', alternaMenu);
-conj.addEventListener('mouseout', alternaMenu);
+//conj.addEventListener('mouseout', alternaMenu);
