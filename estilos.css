@@ -182,12 +182,18 @@ header #logo{
 }
 .blocos h2{
     text-align: center;
-    color: rgb(133, 86, 1);
     text-decoration: rgb(133, 86, 1);
     font-family: 'Libre Baskerville', serif;
 }
+.blocos a:link,
+.blocos a:visited{
+    color: rgb(133, 86, 1);
+}
+.blocos a{
+    text-decoration: none;
+}
 .blocos a:hover{
-    text-decoration: rgb(133, 86, 1);
+    color: rgb(0, 0, 0);
 }
 .cont1{
     display: grid;
