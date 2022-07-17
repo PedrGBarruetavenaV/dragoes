@@ -233,7 +233,7 @@ header #logo{
     width: 240px;
     margin: auto;
 }
-#intro{
+.titulo-intro{
     padding: 0px;
     margin-left: 20%;
     margin-right: 20%;
@@ -242,7 +242,7 @@ header #logo{
     position: relative;
     animation: flutuando .5s ease-in-out 0s infinite alternate;
 }
-#intro h2{
+.titulo-intro h2{
     font-size: 60px;
     font-family: 'Playfair Display', serif;
 }
@@ -250,6 +250,34 @@ header #logo{
     border: 3px black solid;
     opacity: 1;
 }
+#contem-fontes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+}
+#contem-fontes .bloco-fonte{
+    background-color: white;
+    border: black solid 1px;
+    width: 30%;
+}
+.bloco-fonte ul{
+    color: black;
+    list-style-type: none;
+    margin-right: 10%;
+    margin-left: 10%;
+    padding-left: 10px;
+}
+.bloco-fonte li a:visited{
+    color: black;
+}
+.bloco-fonte li a{
+    color: black;
+}
+.bloco-fonte li a:hover{
+    color: yellow;
+}
+
 
 footer{
     grid-column: 1 / 4;
