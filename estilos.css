@@ -95,6 +95,12 @@ header #logo{
 #menu li:hover{
     background-color: black;
 }
+#menu li{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .visivel{
     background-color: rgba(255, 191, 38, 0.86);
     grid-row: 3 / 4;
@@ -225,6 +231,7 @@ header #logo{
     border-radius: 100em;
     height: 200px;
     width: 240px;
+    margin: auto;
 }
 #intro{
     padding: 0px;
