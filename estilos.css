@@ -10,8 +10,6 @@
   }
 
 html{
-    /*background-image: url(imgs/fundo.jpeg);
-    background-repeat: repeat;*/
     background: url(imgs/fundo.jpeg) center center repeat fixed; 
     -webkit-background-size: contain;
     -moz-background-size: contain;
@@ -26,12 +24,6 @@ body{
     margin:  0px;
 }
 
-
-/* PAGINA PRINCIPAL */
-#pagina-inicial{
-    display: grid;
-    grid-template-rows: 150px 1fr;
-}
 header{
     color: white;
     grid-column: 1 / 4;
@@ -113,7 +105,9 @@ header #logo{
     gap: 30px;
     position: relative;
     bottom: -16%;
+    height: 70%;
 }
+
 #nav-dragoes li{
     display: inline-block;
 }
@@ -206,8 +200,6 @@ header #logo{
     grid-template-columns: 300px 1fr;
 }
 .cont1 p{
-    font-size: 20px;
-    font-family: 'Zilla Slab', serif;
     grid-column: 2 / 3;
 }
 .cont2{
@@ -215,8 +207,6 @@ header #logo{
     grid-template-columns: 1fr 50px 300px;
 }
 .cont2 p{
-    font-size: 20px;
-    font-family: 'Zilla Slab', serif;
     grid-column: 1 / 2;
 }
 .cont2 img{
@@ -227,6 +217,8 @@ header #logo{
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 20px;
+    font-family: 'Zilla Slab', serif;
 }
 .blocos img{
     gap: 15%;
