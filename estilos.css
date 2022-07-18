@@ -180,7 +180,6 @@ header #logo{
         height: auto;
         display: flex;
         flex-direction: column;
-        gap: 1px;
         position: relative;
         background-color: rgba(255, 191, 38, 0.86);
         height: 100%;
@@ -213,6 +212,22 @@ header #logo{
     .blocos #contem-fontes .bloco-fonte{
         width: 80%;
     }
+
+    /* MOVER O MENU DE DRAGÕES NO LAYOUT PARA TELAS DE MENOR LARGURA */
+
+    header #menu .desloc{
+        background-color: rgba(255, 191, 38, 0.86);
+        position: relative;
+        top: 190px;
+        z-index: 3;
+    }
+    .visivel-deslocado{
+        position: relative;
+        bottom: 115px;
+        border-right: black 3px solid;
+        border-left: black 3px solid;
+    }
+
 }
 
 
@@ -273,7 +288,7 @@ header #logo{
 }
 .cont2{
     display: grid;
-    grid-template-columns: 1fr 50px 300px;
+    grid-template-columns: 1fr 3vw 13vw;
 }
 .cont2 p{
     grid-column: 1 / 2;
