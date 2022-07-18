@@ -259,6 +259,7 @@ header #logo{
 #contem-fontes .bloco-fonte{
     background-color: white;
     border: black solid 1px;
+    border-radius: 0.7em;
     width: 30%;
 }
 .bloco-fonte ul{
@@ -277,7 +278,12 @@ header #logo{
 .bloco-fonte li a:hover{
     color: yellow;
 }
-
+.bloco-fonte h4{
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 10%;
+    margin-top: 10%;
+}
 
 footer{
     grid-column: 1 / 4;
