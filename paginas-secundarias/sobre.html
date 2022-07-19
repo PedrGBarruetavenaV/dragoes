@@ -145,7 +145,7 @@
         </section>
 
         <button id="botao-foda">Não clique aqui</button>
-        <img src="../imgs/dragao-do-ponto-extra.jpg" class="pts-invisivel" id="dragao-ponto-extra" style="display: none">
+        <img src="../imgs/dragao-do-ponto-extra.jpg" class="pts-invisivel" id="dragao-ponto-extra">
 
         <footer>
             <a href="#topo-da-pagina">
@@ -154,5 +154,16 @@
         </footer>
         
         <script src="../script.js"></script>
+        <script>
+            const botaoDragaoExtra = document.querySelector('#botao-foda');
+            const dragaoPontoExtra = document.querySelector('#dragao-ponto-extra');
+            
+            function alternaDragaoExtra(){
+                dragaoPontoExtra.classList.toggle('pts-visivel');
+                dragaoPontoExtra.classList.toggle('pts-invisivel');
+            }
+
+            botaoDragaoExtra.addEventListener('click', alternaDragaoExtra);
+        </script>
     </body>
 </html>

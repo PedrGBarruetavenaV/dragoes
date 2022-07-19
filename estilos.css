@@ -481,7 +481,8 @@ td{
     height: 80vh;
     position: fixed;
     top: 10%;
-    left: 15%
+    left: 15%;
+    display: inline-block;
 }
 .pts-invisivel{
     display: none;
