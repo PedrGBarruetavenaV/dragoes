@@ -484,12 +484,8 @@ td{
 }
 
 #botao-foda{
-    width: 5vw;
-    height: 5vw;
-    position: absolute;
-    right: 5%;
-    bottom: 5%;
-    opacity: 0.3;
+    background-color: black;;
+    border: none;
 }
 .pts-visivel{
     width: 70vw;
@@ -498,6 +494,7 @@ td{
     top: 10%;
     left: 15%;
     display: inline-block;
+    border: 5px solid black;
 }
 .pts-invisivel{
     display: none;
@@ -506,7 +503,8 @@ td{
 p::selection,
 h1::selection,
 h2::selection,
-h3::selection{
+h3::selection,
+a::selection{
     background-color: rgba(255, 191, 38, 0.86);
 }
 
