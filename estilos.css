@@ -1,9 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,200&display=swap');
+
+@font-face {
+    font-family: "Roboto";
+    src:    url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap") format('woff2'),
+            url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap") format('ttf'),
+            url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap") format('ttf');
+}
 
 
 @keyframes flutuando {
@@ -76,7 +82,7 @@ header #logo{
     height: 40px;
 }
 #menu li{
-    font-family: 'Roboto', 'Libre Baskerville';
+    font-family: 'Roboto', sans-serif;
     color: white;
     display: inline-block;
     padding: 0.5%;
@@ -84,7 +90,7 @@ header #logo{
     padding-right: 2%;
 }
 #menu a{
-    font-family: 'Roboto', 'Libre Baskerville';
+    font-family: 'Roboto', sans-serif;
     color: white;
 }
 #menu a:link{
@@ -136,7 +142,7 @@ header #logo{
     padding-right: 2%;
 }
 #nav-dragoes a{
-    font-family: 'Roboto', 'Libre Baskerville';
+    font-family: 'Roboto', sans-serif;
 }
 #nav-dragoes a:link{
     color: white;
