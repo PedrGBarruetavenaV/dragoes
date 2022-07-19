@@ -170,15 +170,21 @@ header #logo{
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        gap: 5px;
+        margin-bottom: 3px;
         position: relative;
         background-color: rgba(255, 191, 38, 0.86);
         height: 100%;
         padding: 0px;
     }
+    header #botao-menu{
+        height: 50%;
+    }
+    header #botao-menu p{
+        margin: 0px;
+    }
     header #menu li{
         width: 100vw;
-        border-bottom: 1px solid black;
+        border-bottom: 3px solid black;
     }
     header .visivel{
         height: auto;
@@ -188,6 +194,7 @@ header #logo{
         background-color: rgba(255, 191, 38, 0.86);
         height: 100%;
         padding: 0px;
+        top: -10%;
     }
     header .visivel li{
         text-align: center;
@@ -228,7 +235,7 @@ header #logo{
     }
 
     /* MOVER O MENU DE DRAGÕES NO LAYOUT PARA TELAS DE MENOR LARGURA */
-
+    /*
     header #menu .desloc{
         background-color: rgba(255, 191, 38, 0.86);
         position: relative;
@@ -243,6 +250,7 @@ header #logo{
     #nav-dragoes{
         background-color: rgba(255, 191, 38, 1);
     }
+    */
     table{
         width: 50vw;
     }
@@ -253,6 +261,7 @@ header #logo{
         font-size: 15px;
     }
 }
+
 @media (max-width: 350px){
     table tbody td{
         font-size: 9px;
@@ -261,6 +270,7 @@ header #logo{
         font-size: 12px;
     }
 }
+/*
 @media (max-width: 680px) and (min-width: 550px){
     header #menu .desloc{
         top: 132px;
@@ -309,6 +319,7 @@ header #logo{
         bottom: 130px;
     }
 }
+*/
 
 
 #secao-principal{
