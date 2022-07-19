@@ -3,13 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,200&display=swap');
-
-@font-face {
-    font-family: "Roboto";
-    src:    url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap") format('woff2'),
-            url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap") format('ttf'),
-            url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap") format('ttf');
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 
 
 @keyframes flutuando {
