@@ -222,6 +222,7 @@ header #logo{
         z-index: 3;
     }
     .visivel-deslocado{
+        background-color: rgb(255, 191, 38);
         position: relative;
         bottom: 115px;
         border-right: black 3px solid;
@@ -310,6 +311,18 @@ header #logo{
     height: 10vw;
     width: 13vw;
     margin: auto;
+}
+.container-vertical{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container-vertical img{
+    height: 25vw;
+    width: 22vw;
+}
+.blocos #img-dragon-city{
+    width: 26vw;
 }
 .titulo-intro{
     padding: 0px;
