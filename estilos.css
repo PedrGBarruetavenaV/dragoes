@@ -274,56 +274,6 @@ header #logo{
         font-size: 12px;
     }
 }
-/*
-@media (max-width: 680px) and (min-width: 550px){
-    header #menu .desloc{
-        top: 132px;
-    }
-    .visivel-deslocado{
-        bottom: 145px;
-    }
-}
-@media (max-width: 680px) and (min-width: 550px){
-    header #menu .desloc{
-        top: 125px;
-    }
-    .visivel-deslocado{
-        bottom: 145px;
-    }
-}
-@media (max-width: 549px) and (min-width: 450px){
-    header #menu .desloc{
-        top: 117px;
-    }
-    .visivel-deslocado{
-        bottom: 144px;
-    }
-}
-@media (max-width: 449px) and (min-width: 350px){
-    header #menu .desloc{
-        top: 116px;
-    }
-    .visivel-deslocado{
-        bottom: 144px;
-    }
-}
-@media (max-width: 349px) and (min-width: 250px){
-    header #menu .desloc{
-        top: 115px;
-    }
-    .visivel-deslocado{
-        bottom: 133px;
-    }
-}
-@media (max-width: 249px){
-    header #menu .desloc{
-        top: 110px;
-    }
-    .visivel-deslocado{
-        bottom: 130px;
-    }
-}
-*/
 
 
 #secao-principal{
