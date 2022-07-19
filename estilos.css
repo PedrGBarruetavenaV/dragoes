@@ -22,6 +22,7 @@ section{
 }
 body{
     margin:  0px;
+    position: relative;
 }
 
 header{
@@ -318,7 +319,7 @@ header #logo{
 .blocos{
     /*background-image: url(imgs/textura2.jpg);*/
     background-color: rgb(230, 230, 230);
-    opacity: 0.95;
+    opacity: 0.97;
     border-radius: 0.7em;
     margin: 3%;
     padding: 5%;
@@ -371,7 +372,15 @@ header #logo{
     width: 13vw;
     margin: auto;
 }
-
+#dragao-shopee{
+    display: flex;
+    align-items: center;
+}
+#dragao-shopee img{
+    display: inline-block;
+    width: 33vw;
+    height: 30vw;
+}
 .container-vertical{
     display: flex;
     flex-direction: column;
@@ -457,6 +466,25 @@ td{
     font-family: 'Zilla Slab', serif;
     text-align: center;
     padding: 3px;    
+}
+
+#botao-foda{
+    width: 5vw;
+    height: 5vw;
+    position: absolute;
+    right: 5%;
+    bottom: 5%;
+    opacity: 0.3;
+}
+.pts-visivel{
+    width: 70vw;
+    height: 80vh;
+    position: fixed;
+    top: 10%;
+    left: 15%
+}
+.pts-invisivel{
+    display: none;
 }
 
 footer{
