@@ -238,23 +238,6 @@ header #logo{
         width: 80%;
     }
 
-    /* MOVER O MENU DE DRAGÕES NO LAYOUT PARA TELAS DE MENOR LARGURA */
-    /*
-    header #menu .desloc{
-        background-color: rgba(255, 191, 38, 0.86);
-        position: relative;
-        z-index: 3;
-    }
-    .visivel-deslocado{
-        background-color: rgb(255, 191, 38);
-        position: relative;
-        border-right: black 3px solid;
-        border-left: black 3px solid;
-    }
-    #nav-dragoes{
-        background-color: rgba(255, 191, 38, 1);
-    }
-    */
     table{
         width: 50vw;
     }
@@ -345,6 +328,7 @@ header #logo{
     display: inline-block;
     width: 33vw;
     height: 30vw;
+    border-radius: 0px;
 }
 .container-vertical{
     display: flex;
