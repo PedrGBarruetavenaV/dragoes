@@ -189,6 +189,8 @@ header #logo{
         border-bottom: 3px solid black;
         padding-top: 10px;
         padding-bottom: 10px;
+        padding-left: 0px;
+        padding-right: 0px;
     }
     header .visivel{
         height: auto;
@@ -203,6 +205,8 @@ header #logo{
     header .visivel li{
         text-align: center;
         width: 100vw;
+        padding-left: 0px;
+        padding-right: 0px;
     }
 
     .blocos div p{
