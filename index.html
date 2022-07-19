@@ -1,469 +1,123 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
-
-@keyframes flutuando {
-    from { top: 0;     }
-    to   { top: -30px; }
-  }
-
-html{
-    background: url(imgs/fundo.jpeg) center center repeat fixed; 
-    -webkit-background-size: contain;
-    -moz-background-size: contain;
-    -o-background-size: contain;
-    background-size: contain;
-}
-section{
-    margin-left: 3%;
-    margin-right: 3%;
-}
-body{
-    margin:  0px;
-}
-
-header{
-    width: 100%;
-    color: white;
-    /*grid-column: 1 / 4;*/
-    background-color: black;
-    /*background-image: linear-gradient( to left top, rgb(21 49 110), rgb(111 207 132));*/
-    display: grid;
-    grid-template-rows: 50% 1fr 1fr;
-    grid-template-columns: 100px 1fr;
-}
-#titulo{
-    font-family: 'Cinzel', serif;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: black;
-    grid-column: 2 / 3;
-}
-#titulo h1{
-    color: white;
-    margin: 0px;
-    text-align: center;
-}
-#titulo h3{
-    text-align: center;
-    color: white;
-    margin: 0px;
-}
-header #logo{
-    display: inline-block;
-    width: 100px;
-    height: 100px;
-}
-#menu{
-    grid-row: 2 / 3;
-    grid-column: 1 / 3;
-    height: 50px;
-}
-#menu ul{
-    display: flex;
-    list-style-type: none;
-    justify-content: center;
-    align-items: center;
-    gap: 3%;
-    background-color: rgba(255, 191, 38, 0.86);
-    height: 40px;
-}
-#menu li{
-    font-family: 'Roboto', sans-serif;
-    color: white;
-    display: inline-block;
-    padding: 0.5%;
-    padding-left: 2%;
-    padding-right: 2%;
-}
-#menu a{
-    font-family: 'Roboto', sans-serif;
-    color: white;
-}
-#menu a:link{
-    color: white;
-    text-decoration: none;
-}
-#menu a:visited{
-    color: white;
-    text-decoration: none;
-}
-#menu a:hover{
-    color: gray;
-}
-#menu li:hover{
-    background-color: black;
-}
-#menu li{
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.visivel{
-    background-color: rgba(255, 191, 38, 0.86);
-    grid-row: 3 / 4;
-    grid-column: 1 / 3;
-    margin: 0px;
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    position: relative;
-    bottom: -16%;
-    height: 70%;
-}
-
-#nav-dragoes li{
-    display: inline-block;
-}
-#botao-menu{
-    color: inherit;
-    background-color: inherit;
-    font-family: inherit;
-    border: none;
-}
-#nav-dragoes li{
-    display: inline-block;
-    padding: 0.5%;
-    padding-left: 2%;
-    padding-right: 2%;
-}
-#nav-dragoes a{
-    font-family: 'Roboto', sans-serif;
-}
-#nav-dragoes a:link{
-    color: white;
-    text-decoration: none;
-}
-#nav-dragoes a:visited{
-    color: white;
-    text-decoration: none;
-}
-#nav-dragoes a:hover{
-    color: gray;
-}
-#nav-dragoes li:hover{
-    background-color: black;;
-}
-.invisivel{
-    display: none;
-}
-
-/* PARTE PARA DEIXAR RESPONSIVE */
-@media (max-width: 680px){
-    /* DEIXAR O HEADER RESPONSIVE PARA LARGURAS MENORES*/
-    header{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-    }
-    header #menu{
-        height: auto;
-    }
-    header #menu ul{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        gap: 5px;
-        position: relative;
-        background-color: rgba(255, 191, 38, 0.86);
-        height: 100%;
-        padding: 0px;
-    }
-    header #menu li{
-        width: 100vw;
-        border-bottom: 1px solid black;
-    }
-    header .visivel{
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        position: relative;
-        background-color: rgba(255, 191, 38, 0.86);
-        height: 100%;
-        padding: 0px;
-    }
-    header .visivel li{
-        text-align: center;
-        width: 100vw;
-    }
-
-    .blocos div p{
-        font-size: 15px;
-    }
-    .visivel li{
-        border-bottom: 1px solid black;
-    }
-    .visivel{
-        gap: 6px;
-    }
-
-    /* DEIXAR OS BLOCOS REPONSIVE PARA TELAS COM LARGURA MENOR*/
-
-    .blocos .cont1,
-    .blocos .cont2{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-    }
-    .blocos .cont2 img,
-    .blocos .cont1 img{
-        order: -1;
-        width: 40vw;
-        height: 35vw;
-    }
-    .blocos #contem-fontes{
-        flex-direction: column;
-        align-items: center;
-    }
-    .blocos #contem-fontes .bloco-fonte{
-        width: 80%;
-    }
-
-    /* MOVER O MENU DE DRAGÕES NO LAYOUT PARA TELAS DE MENOR LARGURA */
-
-    header #menu .desloc{
-        background-color: rgba(255, 191, 38, 0.86);
-        position: relative;
-        z-index: 3;
-    }
-    .visivel-deslocado{
-        background-color: rgb(255, 191, 38);
-        position: relative;
-        border-right: black 3px solid;
-        border-left: black 3px solid;
-    }
-    #nav-dragoes{
-        background-color: rgba(255, 191, 38, 1);
-    }
-    table{
-        width: 50vw;
-    }
-    table td{
-        font-size: 12px;
-    }
-    table th{
-        font-size: 15px;
-    }
-}
-@media (max-width: 350px){
-    table tbody td{
-        font-size: 9px;
-    }
-    table thead th{
-        font-size: 12px;
-    }
-}
-@media (max-width: 680px) and (min-width: 550px){
-    header #menu .desloc{
-        top: 132px;
-    }
-    .visivel-deslocado{
-        bottom: 145px;
-    }
-}
-@media (max-width: 680px) and (min-width: 550px){
-    header #menu .desloc{
-        top: 125px;
-    }
-    .visivel-deslocado{
-        bottom: 145px;
-    }
-}
-@media (max-width: 549px) and (min-width: 450px){
-    header #menu .desloc{
-        top: 117px;
-    }
-    .visivel-deslocado{
-        bottom: 144px;
-    }
-}
-@media (max-width: 449px) and (min-width: 350px){
-    header #menu .desloc{
-        top: 116px;
-    }
-    .visivel-deslocado{
-        bottom: 144px;
-    }
-}
-@media (max-width: 349px) and (min-width: 250px){
-    header #menu .desloc{
-        top: 115px;
-    }
-    .visivel-deslocado{
-        bottom: 133px;
-    }
-}
-@media (max-width: 249px){
-    header #menu .desloc{
-        top: 110px;
-    }
-    .visivel-deslocado{
-        bottom: 130px;
-    }
-}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Civilizações e Dragões</title>
+        <link rel="icon" href="imgs/logo.jpg">
+        <link rel="stylesheet" href="estilos.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+     </head>
 
 
-#secao-principal{
-    margin-left: 15%;
-    margin-right: 15%;
-}
+    <body id="pagina-inicial">
+        <header>
+            <a href="index.html"><img src="imgs/logo.jpg" alt="logo" id="logo"></a>
+            <div id="titulo">
+                <h1>Civilizações e Dragões</h1>
+                <h3>e dinossauros</h3>
+            </div>
+            <nav id="menu">
+                <ul>
+                    <li><a href="index.html">Página inicial</a></li>
+                    <li id="abre-menu" class="conjunto-menu"><button id="botao-menu"><p>Dragões</p></button></li>
+                    <li id="normal1"><a href="paginas-secundarias/dinossauro.html">Dinossauros</a></li>
+                    <li id="normal2"><a href="paginas-secundarias/dragao_x_dinos.html">Guerra</a></li>
+                    <li id="normal3"><a href="paginas-secundarias/jogos_sobre.html">Jogos</a></li>
+                    <li id="normal4"><a href="paginas-secundarias/sobre.html">Sobre os criadores</a></li>
+                </ul>
+            </nav>
+            <ul id="nav-dragoes" class="invisivel conjunto-menu">
+                <li><a href="paginas-secundarias/dragao-oriental.html">Dragão Oriental</a></li>
+                <li><a href="paginas-secundarias/dragao-europeu.html">Dragão Europeu</a></li>
+                <li><a href="paginas-secundarias/dragao-americano.html">Dragão Americano</a></li>
+                <li><a href="paginas-secundarias/dragao-pop.html">Dragões POP</a></li>
+            </ul>
+        </header>
 
-.blocos{
-    /*background-image: url(imgs/textura2.jpg);*/
-    background-color: rgb(230, 230, 230);
-    opacity: 0.95;
-    border-radius: 0.7em;
-    margin: 3%;
-    padding: 5%;
-    flex-direction: column;
-}
-.blocos h2{
-    text-align: center;
-    text-decoration: rgb(133, 86, 1);
-    font-family: 'Libre Baskerville', serif;
-}
-.blocos a:link,
-.blocos a:visited{
-    color: rgb(133, 86, 1);
-}
-.blocos a{
-    text-decoration: none;
-}
-.blocos a:hover{
-    color: rgb(0, 0, 0);
-}
-.cont1{
-    display: grid;
-    grid-template-columns: 30% 1fr;
-}
-.cont1 p{
-    grid-column: 2 / 3;
-}
-.cont2{
-    display: grid;
-    grid-template-columns: 1fr 3vw 13vw;
-}
-.cont2 p{
-    grid-column: 1 / 2;
-}
-.cont2 img{
-    grid-column: 3 / 4;
-}
-.blocos p{
-    text-align: justify;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 20px;
-    font-family: 'Zilla Slab', serif;
-}
-.blocos img{
-    gap: 15%;
-    border-radius: 100em;
-    height: 10vw;
-    width: 13vw;
-    margin: auto;
-}
+        <section id="secao-principal">
+            <!-- SESSÃO CENTRAL QUE CONTÉM O CONTEÚDO PRINCIPAL -->
+            <article id="introducao" class="blocos">
+                <h2>Introdução</h2>
+                <div class="cont1">
+                    <img src="imgs/dragao-geral.jpg" id="dragao-geral">
+                    <p>Civilizações ao longo do tempo mesmo sem contato entre si descreviam criaturas místicas que hoje chamamos de Dragões, como isso ocorreu mesmo sem dragões terem existido? É oque tentaremos  explicar. E de extra vamos fazer comparações entre os mitológicos dragões e os gigantescos (ou não). A palavra dragão vem de draconem, do Latim  mais ou menos no XIII, que significava “serpente grande”.</p>
+                </div>
+            </article>
 
-.container-vertical{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.container-vertical img{
-    height: 25vw;
-    width: 22vw;
-}
-.blocos #img-dragon-city{
-    width: 26vw;
-}
-.titulo-intro{
-    padding: 0px;
-    margin-left: 20%;
-    margin-right: 20%;
-    color: white;
-    text-align: center;
-    position: relative;
-    animation: flutuando .5s ease-in-out 0s infinite alternate;
-}
-.titulo-intro h2{
-    font-size: 60px;
-    font-family: 'Playfair Display', serif;
-}
-#imagem-autores{
-    border: 3px black solid;
-    opacity: 1;
-}
-#contem-fontes{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 10px;
-}
-#contem-fontes .bloco-fonte{
-    background-color: white;
-    border: black solid 1px;
-    border-radius: 0.7em;
-    width: 30%;
-}
-.bloco-fonte ul{
-    color: black;
-    list-style-type: none;
-    margin-right: 10%;
-    margin-left: 10%;
-    padding-left: 10px;
-}
-.bloco-fonte li a:visited{
-    color: black;
-}
-.bloco-fonte li a{
-    color: black;
-}
-.bloco-fonte li a:hover{
-    color: yellow;
-}
-.bloco-fonte h4{
-    text-align: center;
-    font-size: 16px;
-    margin-bottom: 10%;
-    margin-top: 10%;
-}
+            <article id="dragao-oriental" class="blocos">
+                <a href="paginas-secundarias/dragao-oriental.html"><h2>Dragão Oriental</h2></a>
+                <div class="cont2">
+                    <p>Os gigantescos e compridos dragões oriental eram seres relacionados a elementos da natureza e poder,  associados a bondade mas também a catástrofes ambientais como explicações para tremores e catástrofes tectônicas muito comuns principalmente no Japão . Muito respeitados pelos antigos ainda são um grande símbolo da cultura chinesa.</p>
+                    <img src="imgs/dragao-oriental.jpg">
+                </div>
+            </article>
 
-#bloco-tabela{
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-table{
-    border-collapse: collapse;
-    width: 30%;
-}
-td, th{
-    border: 1px solid black;
-}
-th{
-    font-size: 25px;
-    font-family: 'Zilla Slab', serif;
-}
-td{
-    font-size: 20px;
-    font-family: 'Zilla Slab', serif;
-    text-align: center;
-    padding: 3px;    
-}
+            <article id="dragao-europeu" class="blocos">
+                <a href="paginas-secundarias/dragao-europeu.html"><h2>Dragão Europeu</h2></a>
+                <div class="cont1">
+                    <img src="imgs/dragao-europeu.jpg" alt="Imagem de um dragão europeu">
+                    <p>Graças à influência europeia sobre o mundo os dragões da cultura pop em sua maioria são inspirados nas feras europeias cuspidoras de fogo, guardam cavernas e torres, sendo em sua maioria maus e mágicos. Também presentes no cristianismo por exemplo.</p>
+                </div>
+            </article>
 
-footer{
-    grid-column: 1 / 4;
-    background-color: rgb(0, 0, 0);
-    text-align: center;
-}
-footer img{
-    height: 150px;
-}
+            <article id="dragao-americano" class="blocos">
+                <a href="paginas-secundarias/dragao-americano.html"><h2>Dragão Americano</h2></a>
+                <div class="cont2">
+                    <p>Na cultura da América pré-colombiana, dragões eram muitas vezes figuras divinas e não necessariamente malignas, como era comum em outras regiões. Um dos maiores exemplos é o deus asteca e maia do vento, do ar e do aprendizado, Quetzalcóatl. </p>
+                    <img src="imgs/dragao-americano.jpg" alt="Dragão americano">
+                </div>
+            </article>
+
+            <article id="outros-dragoes" class="blocos">
+                <a><h2>Outros Dragões</h2></a>
+                <div class="cont1">
+                    <img src="imgs/outros-dragoes.jpg" alt="Outros dragões">
+                    <p>Outros tipos de dragão que vale a pena comentar são os dragões africanos e os da Pérsia. Estes primeiros eram geralmente semelhantes a serpentes com pequenas asas. Um exemplo é Aido-Hwedo, um orixá iorubano que assume a forma de uma serpente de todas as cores do arco-íris. Já os persas personificavam essas feras como a opressão da Babilônia sobre a Pérsia.</p>
+                </div>
+            </article>
+
+            <article id="dragao-pop" class="blocos">
+                <a href="paginas-secundarias/dragao-pop.html"><h2>Dragão Pop</h2></a>
+                <div class="cont2">
+                    <p>Com a globalização e o choque de culturas tivemos um catálogo de dragões ampliado e uma resinificação do que eles representavam e até tornando feras imponentes em seres carismáticos que muitas vezes roubam o protagonismo.
+                        Hoje em dia temos filmes, jogos, seriados, música e muito mais sobre dragões.
+                        Antes que eram história para assustar criança são pelúcia de outra geração!</p>
+                    <img src="imgs/dragao-pop.jpg" alt="Dragões pop">
+                    <script src="script.js"></script>
+                </div>
+            </article>
+
+            <article id="dinos" class="blocos">
+                <a href="paginas-secundarias/dinossauro.html"><h2>Dinossauros</h2></a>
+                <div class="cont1">
+                    <img src="imgs/dinossauro.jpg">
+                    <p>Dinossauros que do grego significa "lagarto terrível") constituem um grupo de diversos animais, membros da classe Dinosauria. Acredita-se que os dinossauros apareceram há, pelo menos, 233 milhões de anos, e que, por mais de 167 milhões de anos, foram o grupo animal dominante no nosso planeta, até que um evento catastrófico ocasionou a extinção em massa de quase todos os dinossauros.</p>
+                </div>
+            </article>
+
+            <article id="dragoesxdinos" class="blocos">
+                <a href="paginas-secundarias/dragao_x_dinos.html"><h2>Dragões vs Dinossauros</h2></a>
+                <div class="cont2">
+                    <p>Quem ganharia em uma disputa entre dragões vs dinossauros. Clique para saber mais.</p>
+                    <img src="imgs/dinoxdragao.jpg">
+                </div>
+            </article>
+
+            <article id="jogos" class="blocos">
+                <a href="paginas-secundarias/jogos_sobre.html"><h2>Jogos sobre dragões e dinossauros</h2></a>
+                <div class="cont1">
+                    <img src="imgs/jogos.jpg">
+                    <p>Uma extensão da pagina sobre dragões da cultura pop, essa pagina é destinada a falar especificamente de jogos sobre dragões, em especial o amado dragon city.</p>
+                </div>
+            </article>
+
+        </section>
+
+        <footer>
+            <a href="#pagina-inicial">
+                <img src="imgs/logo.jpg">
+            </a>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>
