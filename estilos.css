@@ -154,12 +154,13 @@ header #logo{
 }
 
 /* PARTE PARA DEIXAR RESPONSIVE */
-@media (max-width: 650px){
+@media (max-width: 680px){
     /* DEIXAR O HEADER RESPONSIVE PARA LARGURAS MENORES*/
     header{
         display: flex;
         flex-direction: column;
         align-items: center;
+        gap: 10px;
     }
     header #menu{
         height: auto;
@@ -167,7 +168,8 @@ header #logo{
     header #menu ul{
         display: flex;
         flex-direction: column;
-        gap: 1px;
+        justify-content: space-around;
+        gap: 5px;
         position: relative;
         background-color: rgba(255, 191, 38, 0.86);
         height: 100%;
@@ -175,6 +177,7 @@ header #logo{
     }
     header #menu li{
         width: 100vw;
+        border-bottom: 1px solid black;
     }
     header .visivel{
         height: auto;
@@ -188,6 +191,16 @@ header #logo{
     header .visivel li{
         text-align: center;
         width: 100vw;
+    }
+
+    .blocos div p{
+        font-size: 15px;
+    }
+    .visivel li{
+        border-bottom: 1px solid black;
+    }
+    .visivel{
+        gap: 6px;
     }
 
     /* DEIXAR OS BLOCOS REPONSIVE PARA TELAS COM LARGURA MENOR*/
@@ -218,17 +231,65 @@ header #logo{
     header #menu .desloc{
         background-color: rgba(255, 191, 38, 0.86);
         position: relative;
-        top: 190px;
         z-index: 3;
     }
     .visivel-deslocado{
         background-color: rgb(255, 191, 38);
         position: relative;
-        bottom: 115px;
         border-right: black 3px solid;
         border-left: black 3px solid;
     }
-
+    #nav-dragoes{
+        background-color: rgba(255, 191, 38, 1);
+    }
+}
+@media (max-width: 680px) and (min-width: 550px){
+    header #menu .desloc{
+        top: 132px;
+    }
+    .visivel-deslocado{
+        bottom: 145px;
+    }
+}
+@media (max-width: 680px) and (min-width: 550px){
+    header #menu .desloc{
+        top: 125px;
+    }
+    .visivel-deslocado{
+        bottom: 145px;
+    }
+}
+@media (max-width: 549px) and (min-width: 450px){
+    header #menu .desloc{
+        top: 117px;
+    }
+    .visivel-deslocado{
+        bottom: 144px;
+    }
+}
+@media (max-width: 449px) and (min-width: 350px){
+    header #menu .desloc{
+        top: 116px;
+    }
+    .visivel-deslocado{
+        bottom: 144px;
+    }
+}
+@media (max-width: 349px) and (min-width: 250px){
+    header #menu .desloc{
+        top: 115px;
+    }
+    .visivel-deslocado{
+        bottom: 133px;
+    }
+}
+@media (max-width: 249px){
+    header #menu .desloc{
+        top: 110px;
+    }
+    .visivel-deslocado{
+        bottom: 130px;
+    }
 }
 
 
