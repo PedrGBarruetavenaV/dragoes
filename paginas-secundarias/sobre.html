@@ -158,8 +158,12 @@
             const dragaoPontoExtra = document.querySelector('#dragao-ponto-extra');
             
             function alternaDragaoExtra(){
-                dragaoPontoExtra.classList.toggle('pts-visivel');
-                dragaoPontoExtra.classList.toggle('pts-invisivel');
+                dragaoPontoExtra.classList.add('pts-visivel');
+                dragaoPontoExtra.classList.remove('pts-invisivel');
+                setTimeout(function(){
+                    dragaoPontoExtra.classList.remove('pts-visivel');
+                    dragaoPontoExtra.classList.add('pts-invisivel');
+                }, 2000);
             }
 
             botaoDragaoExtra.addEventListener('click', alternaDragaoExtra);
