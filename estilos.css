@@ -242,6 +242,23 @@ header #logo{
     #nav-dragoes{
         background-color: rgba(255, 191, 38, 1);
     }
+    table{
+        width: 50vw;
+    }
+    table td{
+        font-size: 12px;
+    }
+    table th{
+        font-size: 15px;
+    }
+}
+@media (max-width: 350px){
+    table tbody td{
+        font-size: 9px;
+    }
+    table thead th{
+        font-size: 12px;
+    }
 }
 @media (max-width: 680px) and (min-width: 550px){
     header #menu .desloc{
@@ -292,25 +309,6 @@ header #logo{
     }
 }
 
-
-#atalhos{
-    position: fixed;
-    grid-column: 1 / 2;
-    height: 100%;
-    /*background-image: linear-gradient( to left top, rgba(92, 72, 207, 0.664), rgba(50 175 129));*/
-    background-image: url(imgs/papel_nav-removebg-preview.png);
-    background-repeat: no-repeat;
-    background-position: top left;
-    background-size: contain;
-    height: 100%;
-    border-radius: 0.7em;
-    justify-content: center;
-}
-#atalhos img{
-    display: block;
-    height: 500px;
-    width: 999px;
-}
 
 #secao-principal{
     margin-left: 15%;
@@ -373,6 +371,7 @@ header #logo{
     width: 13vw;
     margin: auto;
 }
+
 .container-vertical{
     display: flex;
     flex-direction: column;
@@ -435,6 +434,29 @@ header #logo{
     font-size: 16px;
     margin-bottom: 10%;
     margin-top: 10%;
+}
+
+#bloco-tabela{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+table{
+    border-collapse: collapse;
+    width: 30%;
+}
+td, th{
+    border: 1px solid black;
+}
+th{
+    font-size: 25px;
+    font-family: 'Zilla Slab', serif;
+}
+td{
+    font-size: 20px;
+    font-family: 'Zilla Slab', serif;
+    text-align: center;
+    padding: 3px;    
 }
 
 footer{
