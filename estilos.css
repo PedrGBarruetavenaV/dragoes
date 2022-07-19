@@ -74,7 +74,7 @@ header #logo{
     height: 40px;
 }
 #menu li{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', 'Libre Baskerville';
     color: white;
     display: inline-block;
     padding: 0.5%;
@@ -82,7 +82,7 @@ header #logo{
     padding-right: 2%;
 }
 #menu a{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', 'Libre Baskerville';
     color: white;
 }
 #menu a:link{
