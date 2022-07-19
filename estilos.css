@@ -174,7 +174,7 @@ header #logo{
         position: relative;
         background-color: rgba(255, 191, 38, 0.86);
         height: 100%;
-        padding: 0px;
+        padding-left: 0px;
     }
     header #botao-menu{
         height: 50%;
@@ -185,6 +185,8 @@ header #logo{
     header #menu li{
         width: 100vw;
         border-bottom: 3px solid black;
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
     header .visivel{
         height: auto;
@@ -204,8 +206,10 @@ header #logo{
     .blocos div p{
         font-size: 15px;
     }
-    .visivel li{
-        border-bottom: 1px solid black;
+    #cabecalho .visivel li{
+        border-bottom: 3px solid black;
+        padding-top: 7px;
+        padding-bottom: 7px;
     }
     .visivel{
         gap: 6px;
@@ -497,6 +501,13 @@ td{
 }
 .pts-invisivel{
     display: none;
+}
+
+p::selection,
+h1::selection,
+h2::selection,
+h3::selection{
+    background-color: rgba(255, 191, 38, 0.86);
 }
 
 footer{
