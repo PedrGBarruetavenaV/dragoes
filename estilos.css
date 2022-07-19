@@ -134,7 +134,7 @@ header #logo{
     padding-right: 2%;
 }
 #nav-dragoes a{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', 'Libre Baskerville';
 }
 #nav-dragoes a:link{
     color: white;
